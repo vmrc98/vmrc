@@ -3,191 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goa Guesthouse</title>
+    <title>Balaji Inn - Your Serene Escape in Goa</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="logo.png" class="logo" alt="Goa Guesthouse Logo">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="image1.jpg" style="width:100%">
+        <nav class="navbar">
+            <img src="logo.png" class="logo" alt="Balaji Inn Logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#distances">Distances</a></li>
+                <li><a href="#taxi">Taxi</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div class="mySlides fade">
-                <img src="image2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="image3.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="image4.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="image5.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="image6.jpg" style="width:100%">
-            </div>
-        </div>
-        <div class="hero-text">
-            <h1>Balaji Inn</h1>
-            <p>Your serene escape in the heart of Goa</p>
-            <nav>
-                <ul>
-                    <li><a href="#distances">Distances</a></li>
-                    <li><a href="#taxi">Taxi Arrangements</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
+
     <main>
-        <section id="distances">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Balaji Inn</h1>
+                <p>Your serene escape in the heart of Goa</p>
+                <a href="#contact" class="cta-button">Book Now</a>
+            </div>
+            <div class="hero-slider">
+                <!-- Slider images will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Balaji Inn</h2>
+            <p>Experience the perfect blend of comfort and luxury at Balaji Inn, nestled in the vibrant heart of Goa. Our guesthouse offers a tranquil retreat for travelers seeking a memorable stay in this paradise destination.</p>
+        </section>
+
+        <section id="distances" class="distances">
             <h2>Distances to Popular Places</h2>
-            <div class="card">
-                <h3>Miramar Beach</h3>
-                <p>2.8 km (9 minutes)</p>
-                <img src="miramar-beach-banner.webp" alt="Miramar Beach" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Floating Casino</h3>
-                <p>2.7 km (11 minutes)</p>
-                <img src="casino.png" alt="Nearest Casino" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Dona Paula</h3>
-                <p>5.1 km (14 minutes)</p>
-                <img src="dona.jpg" alt="Dona Paula" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Church of Our Lady of the Immaculate Conception</h3>
-                <p>2.2 km (8 minutes)</p>
-                <img src="conception_church_main.jpg" alt="Church of Our Lady of the Immaculate Conception" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Candolim Beach</h3>
-                <p>14.3 km (35 minutes)</p>
-                <img src="candolim-beach-banner.webp" alt="Candolim Beach" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Reis Magos fort</h3>
-                <p>9.9 km (23 minutes)</p>
-                <img src="reis.jpg" alt="Reis Magos fort" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Old Goa</h3>
-                <p>13.4 km (25 minutes)</p>
-                <img src="old-goa.jpg" alt="Old Goa" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Baga Beach</h3>
-                <p>19.2 km (55 minutes)</p>
-                <img src="nightlife-in-baga-beach.webp" alt="Baga Beach" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Calangute Beach</h3>
-                <p>16.8 km (49 minutes)</p>
-                <img src="calangute-beach-banner.webp" alt="Calangute Beach" class="card-img">
-            </div>
-            <div class="card">
-                <h3>Goa International Airport</h3>
-                <p>Dabolim airport: 26.5 km (41 minutes)</p>
-                <p>Mopa airport: 34.7 km (1 hour)</p>
-                <img src="mia-airport-mopa-goa-190526.webp" alt="Goa International Airport" class="card-img">
+            <div class="card-container">
+                <!-- Distance cards will be dynamically inserted here by JavaScript -->
             </div>
         </section>
-        
-        
-        <section id="taxi">
+
+        <section id="taxi" class="taxi">
             <h2>Taxi Arrangements</h2>
-            
-            <div class="card">
-                <h3>Goa Miles Taxi App</h3>
-                <p><b>Wesbite</b></p><a href="https://www.goamiles.com/" target="_blank"></a>https://www.goamiles.com/</a>
-<p> <b>Android</b></p><a href="https://play.google.com/store/search?q=goamiles&c=apps" target="_blank"><img src="android-icon.png" alt="Android"></a> 
-<p><b>iOS</b></p><a href="https://apps.apple.com/us/app/goamiles/id1414383690" target="_blank"><img src="apple-icon.png" alt="Apple"></a>
-
-                <p>Phone number : +91-9607198989</p>
-                
+            <div class="taxi-options">
+                <div class="taxi-card">
+                    <h3>Goa Miles Taxi App</h3>
+                    <p><strong>Website:</strong> <a href="https://www.goamiles.com/" target="_blank">www.goamiles.com</a></p>
+                    <p><strong>Phone:</strong> +91-9607198989</p>
+                    <div class="app-links">
+                        <a href="https://play.google.com/store/search?q=goamiles&c=apps" target="_blank"><i class="fab fa-android"></i></a>
+                        <a href="https://apps.apple.com/us/app/goamiles/id1414383690" target="_blank"><i class="fab fa-apple"></i></a>
+                    </div>
+                </div>
+                <div class="taxi-card">
+                    <h3>Our Trusted Driver</h3>
+                    <p><strong>Phone:</strong> +91 91737323456789</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Own contact</h3>
-                <p>Phone: +91 91737323456789</p>
-            </div>
-            
         </section>
-        <section id="pricing">
+
+        <section id="pricing" class="pricing">
             <h2>Pricing</h2>
-
-            <div class="card">
-                <h3>Per Room</h3>
-                <p>₹1500 per night inc GST.</p>
-                
-            </div>
-            <div class="card">
-                <h3>Extra Beds</h3>
-                <p>₹500 per bed per night.</p>
-                
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Standard Room</h3>
+                    <p class="price">?1500</p>
+                    <p>per night inc GST</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Extra Bed</h3>
+                    <p class="price">?500</p>
+                    <p>per bed per night</p>
+                </div>
             </div>
         </section>
-        <section id="Contact">
-            <h2>Contact for Bookings/Query</h2>
 
-            <div class="card">
-                <h3>Manager</h3>
-                <p>+91-9765874785</p>
-                
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Manager</h3>
+                    <p><i class="fas fa-phone"></i> +91-9765874785</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><i class="fas fa-envelope"></i> balajiinn2023@gmail.com</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Email</h3>
-                <p>balajiinn2023@gmail.com
-                </p>
-                
-                
-            </div>
-
-            
+            <form id="booking-form" class="booking-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="check-in" required>
+                <input type="date" name="check-out" required>
+                <textarea name="message" placeholder="Special Requests" rows="4"></textarea>
+                <button type="submit">Send Booking Request</button>
+            </form>
         </section>
-        <section id="Reviews">
-            <h2>Reviews</h2>
 
-            <div class="card">
-                
-                <p><img src="review1.png" alt="Image Description"></p>
-                
+        <section id="reviews" class="reviews">
+            <h2>Guest Reviews</h2>
+            <div class="review-slider">
+                <!-- Review cards will be dynamically inserted here by JavaScript -->
             </div>
-            <div class="card">
-                
-                <p><img src="review2.png" alt="Image Description"></p>
-                
-            </div>
-            <div class="card">
-                
-                <p><img src="review3.png" alt="Image Description"></p>
-                
-            </div>
-            <div class="card">
-                
-                <p><img src="review4.png" alt="Image Description"></p>
-                
-            </div> 
-             <div class="card">
-                
-                <p><img src="review5.png" alt="Image Description"></p>
-                
-            </div>
-            <div class="card">
-                
-                <p><img src="review6.png" alt="Image Description"></p>
-                
-            </div>
-
-            
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Balaji Inn. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#distances">Distances</a></li>
+                    <li><a href="#taxi">Taxi</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Balaji Inn. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

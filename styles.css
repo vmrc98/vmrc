@@ -1,154 +1,451 @@
-/* General Styles */
-body {
-    font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --card-bg: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
-header .slideshow-container {
-    position: relative;
-    max-width: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation styles... (previously defined) */
+
+/* Hero Section styles... (previously defined) */
+
+/* Sections styles... (previously defined) */
+
+/* Cards styles... (previously defined) */
+
+/* Taxi Section styles... (previously defined) */
+
+/* Pricing Section styles... (previously defined) */
+
+
+/* Navigation */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
     height: 100vh;
-    overflow: hidden;
-}
-
-header .slideshow-container img {
-    width: 100%;
-    vertical-align: middle;
-}
-
-header .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100px; /* Adjust width as needed */
-    z-index: 10;
-}
-
-
-header .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;
-    z-index: 5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
-header .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+.hero-content {
+    max-width: 800px;
 }
 
-header .hero-text p {
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
 }
 
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.cta-button:hover {
+    background-color: var(--secondary-color);
 }
 
-main {
-    padding: 2rem;
-}
-
+/* Sections */
 section {
-    margin-bottom: 2rem;
+    padding: 5rem 0;
 }
 
 section h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex; /* Added */
-    justify-content: space-between; /* Added */
-    align-items: center; /* Added */
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: var(--transition);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.card img.card-img {
-    width: 200px; /* Adjust as needed */
-    height: auto;
-    margin-left: 1rem; /* Adjust spacing as needed */
-
-    
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-footer {
-    background-color: #333;
-    color: white;
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Taxi Section */
+.taxi-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.taxi-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.taxi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-links a {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+
+.app-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Pricing Section */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pricing-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 2rem;
     text-align: center;
-    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
 }
 
-/* Slideshow */
-.mySlides {
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.booking-form button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.booking-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Reviews Section */
+.review-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.review-slider::-webkit-scrollbar {
     display: none;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.review-card {
+    flex: 0 0 300px;
+    margin-right: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
 }
 
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+.review-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul {
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.newsletter-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
         flex-direction: column;
     }
-    
-    nav ul li {
-        margin: 0.5rem 0;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
-    
-    header .hero-text h1 {
-        font-size: 2rem;
-    }
-    
-    header .hero-text p {
-        font-size: 1rem;
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
