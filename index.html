@@ -3,26 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Website</title>
+    <title>Goa Guesthouse</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Hotel</h1>
-    </header>
-    <section>
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="images/hotel1.jpg" alt="Hotel Image 1">
-            <img src="images/hotel2.jpg" alt="Hotel Image 2">
-            <img src="images/hotel3.png" alt="Hotel Image 3">
+        <img src="logo.png" class="logo" alt="Goa Guesthouse Logo">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image6.jpg" style="width:100%">
+            </div>
         </div>
-    </section>
-    <section>
-        <h2>Contact Information</h2>
-        <p>Address: 123 Hotel St, City, Country</p>
-        <p>Phone: +123456789</p>
-        <p>Email: info@hotel.com</p>
-    </section>
+        <div class="hero-text">
+            <h1>Balaji Inn</h1>
+            <p>Your serene escape in the heart of Goa</p>
+            <nav>
+                <ul>
+                    <li><a href="#distances">Distances</a></li>
+                    <li><a href="#taxi">Taxi Arrangements</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="distances">
+            <h2>Distances to Popular Places</h2>
+            <div class="card">
+                <h3>Miramar Beach</h3>
+                <p>2.8 km (9 minutes)</p>
+                <img src="miramar-beach-banner.webp" alt="Miramar Beach" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Floating Casino</h3>
+                <p>2.7 km (11 minutes)</p>
+                <img src="casino.png" alt="Nearest Casino" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Dona Paula</h3>
+                <p>5.1 km (14 minutes)</p>
+                <img src="dona.jpg" alt="Dona Paula" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Church of Our Lady of the Immaculate Conception</h3>
+                <p>2.2 km (8 minutes)</p>
+                <img src="conception_church_main.jpg" alt="Church of Our Lady of the Immaculate Conception" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Candolim Beach</h3>
+                <p>14.3 km (35 minutes)</p>
+                <img src="candolim-beach-banner.webp" alt="Candolim Beach" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Reis Magos fort</h3>
+                <p>9.9 km (23 minutes)</p>
+                <img src="reis.jpg" alt="Reis Magos fort" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Old Goa</h3>
+                <p>13.4 km (25 minutes)</p>
+                <img src="old-goa.jpg" alt="Old Goa" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Baga Beach</h3>
+                <p>19.2 km (55 minutes)</p>
+                <img src="nightlife-in-baga-beach.webp" alt="Baga Beach" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Calangute Beach</h3>
+                <p>16.8 km (49 minutes)</p>
+                <img src="calangute-beach-banner.webp" alt="Calangute Beach" class="card-img">
+            </div>
+            <div class="card">
+                <h3>Goa International Airport</h3>
+                <p>Dabolim airport: 26.5 km (41 minutes)</p>
+                <p>Mopa airport: 34.7 km (1 hour)</p>
+                <img src="mia-airport-mopa-goa-190526.webp" alt="Goa International Airport" class="card-img">
+            </div>
+        </section>
+        
+        
+        <section id="taxi">
+            <h2>Taxi Arrangements</h2>
+            
+            <div class="card">
+                <h3>Goa Miles Taxi App</h3>
+                <p><b>Wesbite</b></p><a href="https://www.goamiles.com/" target="_blank"></a>https://www.goamiles.com/</a>
+<p> <b>Android</b></p><a href="https://play.google.com/store/search?q=goamiles&c=apps" target="_blank"><img src="android-icon.png" alt="Android"></a> 
+<p><b>iOS</b></p><a href="https://apps.apple.com/us/app/goamiles/id1414383690" target="_blank"><img src="apple-icon.png" alt="Apple"></a>
+
+                <p>Phone number : +91-9607198989</p>
+                
+            </div>
+            <div class="card">
+                <h3>Own contact</h3>
+                <p>Phone: +91 91737323456789</p>
+            </div>
+            
+        </section>
+        <section id="pricing">
+            <h2>Pricing</h2>
+
+            <div class="card">
+                <h3>Per Room</h3>
+                <p>₹1500 per night inc GST.</p>
+                
+            </div>
+            <div class="card">
+                <h3>Extra Beds</h3>
+                <p>₹500 per bed per night.</p>
+                
+            </div>
+        </section>
+        <section id="Contact">
+            <h2>Contact for Bookings/Query</h2>
+
+            <div class="card">
+                <h3>Manager</h3>
+                <p>+91-9765874785</p>
+                
+            </div>
+            <div class="card">
+                <h3>Email</h3>
+                <p>balajiinn2023@gmail.com
+                </p>
+                
+                
+            </div>
+
+            
+        </section>
+        <section id="Reviews">
+            <h2>Reviews</h2>
+
+            <div class="card">
+                
+                <p><img src="review1.png" alt="Image Description"></p>
+                
+            </div>
+            <div class="card">
+                
+                <p><img src="review2.png" alt="Image Description"></p>
+                
+            </div>
+            <div class="card">
+                
+                <p><img src="review3.png" alt="Image Description"></p>
+                
+            </div>
+            <div class="card">
+                
+                <p><img src="review4.png" alt="Image Description"></p>
+                
+            </div> 
+             <div class="card">
+                
+                <p><img src="review5.png" alt="Image Description"></p>
+                
+            </div>
+            <div class="card">
+                
+                <p><img src="review6.png" alt="Image Description"></p>
+                
+            </div>
+
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Balaji Inn. All rights reserved.</p>
+    </footer>
 </body>
 </html>
