@@ -162,3 +162,30 @@ footer {
         max-width: 200px;
     }
 }
+
+@media (min-width: 769px) {
+    .card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .card img.card-img {
+        margin-left: 1rem;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    header .hero-text p {
+        font-size: 2rem;
+    }
+
+    .card img.card-img {
+        margin-left: 1rem;
+        width: auto;
+    }
+}
